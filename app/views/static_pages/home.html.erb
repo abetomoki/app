@@ -1,0 +1,119 @@
+<!--ログイン時のホーム画面-->
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="micropost_form">
+        <%= render 'shared/experince_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+
+
+
+<!--非ログイン時のホーム画面-->
+<div id="top-page">
+<h1>
+    志をかかげて、<br>
+    生きてみよう。
+</h1>
+  <%= link_to "はじめる" , signup_path , class:"btn btn-lg btn-success signup-btn"%>
+</div>
+
+<div class="container">
+<h2>経験を、自信に変えるアプリです</h2>
+<h2>PROCESS</h2>
+  <div class="contents">
+    <div class="content1">
+    <h3>1 経験して<br>
+        <%= image_tag '1.jpg' %>
+    </h3>
+      <p>今日も明日も直面する、小さな体験。</p>
+      <p>勉強、面接、会話、運動、仕事...。</p>
+      <p>些細な経験で構いません。</p>
+    </div>
+    
+    <div class="content2">
+    <h3>2 積み重ねて<br>
+        <%= image_tag '4.png' %>
+    </h3>
+      <p>日々の行動を振り返ってみて、</p>
+      <p>一つ一つの経験を積み重ねましょう。</p>
+      <p>意外なほどに力はついている。</p>
+    </div>
+    
+    <div class="content3">
+    <h3>3 自信になる<br>
+        <%= image_tag '3.png' %>
+    </h3>
+      <p>これまでの小さな小さな経験が、</p>
+      <p>思いの外多くあると気づく。</p>
+      <p>経験は自信に変わる。</p>
+      <p>視野を広げてさらなる経験へ。</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>VISION</h2>
+  <div class="vision">
+      <h3>「人は、何のために生きているのだろう」</h3>
+      <br>
+この問いに、答えられる人は決して多くはありません。<br>
+そもそも、答えなんてないのかもしれないという人もいます。<br>
+ですが、この問いに迷いなく即答できる人は強いと思いませんか？<br><br>
+
+スポーツを通して世界を平和にする使命がありますとか。<br>
+恵まれない子供達に教育を行き届けさせますとか。<br>
+たとえ思い込みだとしても、信じる使命がある人は強い。<br><br>
+
+そうした使命は、<br>
+何かしらの行動を起こした人が持っていることが多いです。<br>
+できれば誰しもが行動して使命を考え、<br>
+目的を持って生きる方が幸せに感じられるものです。<br><br>
+
+だって、何もしない人生よりも、<br>
+何かを成し遂げる人生の方が楽しいでしょう。<br>
+そんな使命を見つける一歩前、「行動する」さらに前、<br>
+自信がないがゆえに挑戦できないことが多い。<br>
+その悩みを解消するためにAjishioを立ち上げました。<br><br>
+
+あなたの経験を見える化し、自信へとつながる。<br>
+それはやがて志へと変わる。<br>
+これがわたしたちAjishioの目指す役割です。<br>
+</div>
+</div>
+
+<div class="space"></div>
+<footer>
+
+<div class="container">
+<h2>ABOUT</h2>
+  <div class="footer-contents">
+    <div class="footer-content1">
+    <h3>Mission<br></h3>
+    「正しい社会をつくる」を志とし、<br>
+    その実現のために活動します。<br>
+    人類の価値観を変える仕掛けを作り出し、<br>
+    ソーシャルグッド市場の<br>
+    拡大・構築を目指します。<br>
+    </div>
+    <div class="footer-space">
+        <h3> </h3>
+    </div>
+    <div class="footer-content2">
+    <h3>Contact</h3>
+    <br>
+    <%= image_tag "footer2.png"%> abcdefg@gmail.com<br><br>
+    <%= image_tag "footer3.png"%> @abcdefg
+    </div>
+  </div>
+</div>
+
+</footer>
+
+<% end %>
+

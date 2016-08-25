@@ -1,0 +1,227 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#top-page {
+    margin: 0 0 0 100;
+    background: url(/images/sample3.jpg) no-repeat center;
+    background-size: cover;
+    font-family: Hannarimincho;
+    color: white;
+    font-size: 30px;
+    padding: 12% 0 10% 0;
+      text-align: center;
+}
+
+#top-page h1 {
+  margin-bottom: 10%;
+}
+
+.signup-btn {
+    font-family: Gulim;
+    padding: 0.5% 5% 0.5% 5%;
+    font-size: 25px;
+}
+
+
+
+/* universal */
+
+
+
+body {
+  padding-top: 60px;
+  font-family: Gulim;
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+// header
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: black;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 3px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+  font-size: 20px;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+
+// 機能
+.container {
+  text-align: center;
+}
+
+.container h2 {
+    margin: 10% 0 5% 0;
+    font-size: 40px;
+}
+
+
+
+.content1, .content2, .content3 {
+    float: left;
+    letter-spacing: 5px;
+    width: 33%;
+}
+
+.content1 h3, .content2 h3, .content3 h3 {
+    font-size: 35px;
+}
+
+.content2 {
+  color: green;
+}
+
+.contents img {
+  width: 50%;
+}
+
+
+//ビジョン
+
+.vision {
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-align: left;
+  margin: 0 25% 15% 25% ;
+}
+
+// footer
+
+footer {
+  background: gray;
+  color: white;
+  padding-bottom: 100px;
+}
+
+footer h3 {
+}
+
+footer .footer-space {
+    float: left;
+      width: 19%;
+}
+
+ .footer-content1 , .footer-content2 {
+    float: left;
+    letter-spacing: 5px;
+    width: 40%;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+/* sidebar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
